@@ -16,4 +16,4 @@ async function checkAPI(prompt) {
   }
 }
 
-export default checkAPI;
+export default checkAPI; 
