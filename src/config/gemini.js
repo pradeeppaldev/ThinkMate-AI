@@ -8,10 +8,10 @@ async function checkAPI(prompt) {
     const result = await model.generateContent(prompt);
     const response = result.response.text();
     // const response = result.candidates[0].content.parts[0].text;
-    console.log("✅ Response received:", response);
+    console.log(response);
     return response;
   } catch (err) {
-    console.log("❌ Error:", err.message);
+    console.log(err.message);
     return "";
   }
 }
